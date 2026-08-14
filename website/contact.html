@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Sanitized example of a medical-practice Tor Onion Service.">
+<title>Contact — Example Medical Practice</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/vendor/maplibre/maplibre-gl.css">
+</head>
+<body>
+
+<header>
+<h1>Example Medical Practice</h1>
+<p>Public information through a privacy-oriented Onion Service</p>
+</header>
+
+
+<nav>
+<a href="/">Home</a>
+<a href="/about-us.html">About Us</a>
+<a href="/contact.html">Contact / Directions</a>
+<a href="/forms.html">Forms</a>
+<a href="/staff.html">Staff</a>
+<a href="/payment.html">Payment FAQ</a>
+<a href="/hours.html">Hours</a>
+</nav>
+
+<main>
+
+<h2>Contact / Directions</h2>
+<section>
+<h3>Office One</h3>
+<address>
+Public office address placeholder<br>
+Public telephone placeholder
+</address>
+<div id="office-one-map" class="map" aria-label="Interactive map for office one"></div>
+<p class="map-note"><strong>About this map:</strong> This interactive map is hosted locally on the Onion Service using OpenStreetMap-derived data. For practicality, storage efficiency, and privacy, coverage is intentionally limited to the immediate surrounding area.</p>
+</section>
+<hr>
+<section>
+<h3>Office Two</h3>
+<address>
+Public office address placeholder<br>
+Public telephone placeholder
+</address>
+<div id="office-two-map" class="map" aria-label="Interactive map for office two"></div>
+<p class="map-note"><strong>About this map:</strong> This interactive map is hosted locally on the Onion Service using OpenStreetMap-derived data. For practicality, storage efficiency, and privacy, coverage is intentionally limited to the immediate surrounding area.</p>
+</section>
+
+</main>
+
+<footer>
+<strong>Official Tor Onion Service</strong><br>
+Public informational content only. Do not transmit patient records or sensitive medical information through this site.
+</footer>
+
+
+<script src="/vendor/maplibre/maplibre-gl.js"></script>
+<script src="/vendor/pmtiles/pmtiles.js"></script>
+<script src="/js/site-config.public.js"></script>
+<script src="/js/maps.js"></script>
+
+</body>
+</html>

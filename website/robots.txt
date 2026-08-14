@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace with the live Onion address during private deployment.
+Sitemap: http://YOUR_ONION_ADDRESS.onion/sitemap.xml

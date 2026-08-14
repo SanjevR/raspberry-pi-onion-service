@@ -1,0 +1,5 @@
+# Example v3 Onion Service configuration.
+# Never commit or publish the contents of HiddenServiceDir.
+
+HiddenServiceDir /var/lib/tor/example_onion/
+HiddenServicePort 80 127.0.0.1:8080

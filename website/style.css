@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --navy: #173a59;
+    --blue: #b9dfed;
+    --background: #f4f7f9;
+    --text: #20252a;
+    --card: #ffffff;
+    --border: #d8e0e6;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--background);
+}
+
+header {
+    padding: 2.4rem 1rem;
+    text-align: center;
+    background: var(--blue);
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(2rem, 6vw, 4rem);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .75rem 1.6rem;
+    padding: 1.2rem;
+    background: var(--navy);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+main {
+    width: min(1100px, calc(100% - 2rem));
+    margin: 2rem auto;
+    padding: clamp(1.2rem, 4vw, 2.5rem);
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+}
+
+footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: var(--navy);
+    color: #fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.25rem;
+}
+
+.card {
+    padding: 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: .8rem;
+    background: #fff;
+}
+
+.notice {
+    padding: 1rem;
+    margin: 1.25rem 0;
+    background: #eef7fb;
+    border-left: .35rem solid #4b9dbd;
+}
+
+.staff-photo {
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: .6rem;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.home-hero-image {
+    display: block;
+    width: min(420px, 100%);
+    height: auto;
+    margin: 1.5rem auto;
+    border-radius: .8rem;
+}
+
+.map {
+    width: 100%;
+    min-height: 420px;
+    margin: 1rem 0;
+    border: 1px solid var(--border);
+    border-radius: .75rem;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.map-note {
+    font-size: .95rem;
+}
+
+code, pre {
+    font-family: Consolas, Monaco, "Courier New", monospace;
+}
+
+pre {
+    padding: 1rem;
+    overflow: auto;
+    background: #111;
+    color: #eee;
+    border-radius: .6rem;
+}
+
+@media (max-width: 600px) {
+    nav {
+        gap: .65rem 1rem;
+    }
+
+    .map {
+        min-height: 340px;
+    }
+}

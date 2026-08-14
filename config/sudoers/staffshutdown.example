@@ -1,0 +1,1 @@
+staffshutdown ALL=(root) NOPASSWD: /usr/local/sbin/staff-onion-shutdown
